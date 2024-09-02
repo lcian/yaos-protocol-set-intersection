@@ -1,6 +1,6 @@
 # 🔒 Yao's protocol – set intersection
 
-Yao's protocol – set intersection is a proof of concept implementation for the secure multi-party computation of set intersection.
+Yao's protocol – set intersection is a proof of concept implementation for the secure multi-party computation of the intersection between sets of 32-bit integers.
  
 The implementation is based on [Yao's protocol](https://ieeexplore.ieee.org/document/4568207) (aka garbled circuits), one of the first protocols for secure multi-party computation.
 
