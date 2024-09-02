@@ -1,8 +1,9 @@
-# Introduction to Cybersecurity
+# 🔒 Yao's protocol – set intersection
 
-This repository contains my project for the course of "Introduction to Cybersecurity" at the University of Klagenfurt.
+Yao's protocol – set intersection is a proof of concept implementation for the secure multi-party computation of set intersection.
+ 
+The implementation is based on [Yao's protocol](https://ieeexplore.ieee.org/document/4568207) (aka garbled circuits), one of the first protocols for secure multi-party computation.
 
-The project is an implementation of a protocol for the computation of Private Set Intersection by leveraging [Yao's protocol](https://ieeexplore.ieee.org/document/4568207). You can read the report [here](report.pdf), where I explain the set intersection algorithm, the circuit I used and how to run the code.
+Its Python implementation is taken from [this repository](https://github.com/ojroques/garbled-circuit), which I modified to implement the [free-XOR optimization](http://www.cs.toronto.edu/~vlad/papers/XOR_ICALP08.pdf), a variant that makes the computation much more efficient for this particular function.
 
-The code for Yao's protocol is due to Olivier Roques and Emmanuelle Risson, and was taken from [this repository](https://github.com/ojroques/garbled-circuit).
-I modified the source code to include the [free-XOR optimization](http://www.cs.toronto.edu/~vlad/papers/XOR_ICALP08.pdf) of the protocol, which greatly speeds up computation with this particular circuit.
+You can read the full report [here](report.pdf), where I describe my choices for the implementation as well as instructions on how to run the code.
